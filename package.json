@@ -1,6 +1,6 @@
 {
-    "name": "minecraft-java-core",
-    "version": "3.10.4",
+    "name": "minecraft-java-core-modified",
+    "version": "1.0.0",
     "types": "./build/Index.d.ts",
     "exports": {
         ".": {
@@ -28,7 +28,7 @@
         "Forge",
         "Minecraft-Forge"
     ],
-    "author": "Luuxis",
+    "author": "Luuxis/Boulldogo",
     "license": "CCANC",
     "dependencies": {
         "7zip-bin": "^5.2.0",
@@ -47,11 +47,11 @@
         "typescript": "^4.9.4"
     },
     "bugs": {
-        "url": "https://github.com/luuxis/minecraft-java-core/issues"
+        "url": "https://github.com/Boulldog0/minecraft-java-core/issues"
     },
-    "homepage": "https://github.com/luuxis/minecraft-java-core#readme",
+    "homepage": "https://github.com/Boulldog0/minecraft-java-core#readme",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/luuxis/minecraft-java-core.git"
+        "url": "git+https://github.com/Boulldog0/minecraft-java-core.git"
     }
 }
