@@ -43,6 +43,7 @@ export default class AZauth {
             access_token: response.access_token,
             client_token: response.uuid,
             uuid: response.uuid,
+            email_verified: response.email_verified,
             name: response.username,
             user_properties: '{}',
             user_info: {
@@ -86,6 +87,7 @@ export default class AZauth {
             access_token: response.access_token,
             client_token: response.uuid,
             uuid: response.uuid,
+            email_verified: response.email_verified,
             name: response.username,
             user_properties: '{}',
             user_info: {

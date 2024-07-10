@@ -107,7 +107,7 @@ export default class Launch extends EventEmitter {
 
             memory: {
                 min: '1G',
-                max: '2G'
+                max: '3G'
             },
             ...opt,
         };
