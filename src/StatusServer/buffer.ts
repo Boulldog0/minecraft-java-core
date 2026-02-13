@@ -17,12 +17,12 @@ function CustomBuffer(existingBuffer: any = Buffer.alloc(48)) {
         }
     };
 
-    this.writeString = (string: any) => {
-        this.writeletInt(string.length);
-        if (offset + string.length >= buffer.length) Buffer.concat([buffer, new Buffer(string.length)]);
-        buffer.write(string, offset, string.length, "UTF-8");
-        offset += string.length;
-    };
+ this.writeString = (string: any) => {
+     this.writeletInt(string.length);
+    if (offset + string.length >= buffer.length) buffer = Buffer.concat([buffer, Buffer.alloc(string.length + 16)]);
+     buffer.write(string, offset, string.length, "UTF-8");
+     offset += string.length;
+ };
 
     this.writeUShort = (val: any) => {
         this.writeUByte(val >> 8);
@@ -31,7 +31,7 @@ function CustomBuffer(existingBuffer: any = Buffer.alloc(48)) {
 
     this.writeUByte = (val: any) => {
         if (offset >= buffer.length) {
-            buffer = Buffer.concat([buffer, new Buffer(50)]);
+            buffer = Buffer.concat([buffer, Buffer.alloc(50)]);
         }
 
         buffer.writeUInt8(val, offset++);
